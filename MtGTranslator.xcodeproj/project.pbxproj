@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		178C85EE19BC3253000A9565 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 178C85ED19BC3253000A9565 /* Foundation.framework */; };
+		178C85F019BC3253000A9565 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 178C85EF19BC3253000A9565 /* CoreGraphics.framework */; };
+		178C85F219BC3253000A9565 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 178C85F119BC3253000A9565 /* UIKit.framework */; };
+		178C85F819BC3253000A9565 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 178C85F619BC3253000A9565 /* InfoPlist.strings */; };
+		178C85FA19BC3253000A9565 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 178C85F919BC3253000A9565 /* main.m */; };
+		178C85FE19BC3253000A9565 /* SPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 178C85FD19BC3253000A9565 /* SPAppDelegate.m */; };
+		178C860119BC3253000A9565 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 178C85FF19BC3253000A9565 /* Main.storyboard */; };
+		178C860619BC3253000A9565 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 178C860519BC3253000A9565 /* Images.xcassets */; };
+		178C864419BC4735000A9565 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 178C864319BC4735000A9565 /* AudioToolbox.framework */; };
+		49315C521C9D664600377167 /* SPCardSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49315C511C9D664600377167 /* SPCardSelectionViewController.m */; };
+		49315C551C9D665F00377167 /* SPCardPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49315C541C9D665F00377167 /* SPCardPresentationViewController.m */; };
+		49315C581C9D704D00377167 /* SPCardsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49315C571C9D704D00377167 /* SPCardsModel.m */; };
+		49315C5B1C9D712A00377167 /* SPMtgSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 49315C5A1C9D712A00377167 /* SPMtgSet.m */; };
+		49315C671C9D7B2300377167 /* 9ED@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49315C621C9D7B2300377167 /* 9ED@2x.png */; };
+		49315C681C9D7B2300377167 /* DIS@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49315C631C9D7B2300377167 /* DIS@2x.png */; };
+		49315C691C9D7B2300377167 /* GPT@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49315C641C9D7B2300377167 /* GPT@2x.png */; };
+		49315C6A1C9D7B2300377167 /* RAV@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49315C651C9D7B2300377167 /* RAV@2x.png */; };
+		49315C6B1C9D7B2300377167 /* TSP@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49315C661C9D7B2300377167 /* TSP@2x.png */; };
+		49315C6E1C9D87E200377167 /* SPMtgSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49315C6D1C9D87E200377167 /* SPMtgSetTableViewCell.m */; };
+		49315C701C9D8B0A00377167 /* mtg_set_configuration.csv in Resources */ = {isa = PBXBuildFile; fileRef = 49315C6F1C9D8B0A00377167 /* mtg_set_configuration.csv */; };
+		49315C721C9D8FD500377167 /* Undefined@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49315C711C9D8FD500377167 /* Undefined@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		178C85EA19BC3253000A9565 /* MtGTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MtGTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		178C85ED19BC3253000A9565 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		178C85EF19BC3253000A9565 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		178C85F119BC3253000A9565 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		178C85F519BC3253000A9565 /* MtGTranslator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MtGTranslator-Info.plist"; sourceTree = "<group>"; };
+		178C85F719BC3253000A9565 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		178C85F919BC3253000A9565 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		178C85FB19BC3253000A9565 /* MtGTranslator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MtGTranslator-Prefix.pch"; sourceTree = "<group>"; };
+		178C85FC19BC3253000A9565 /* SPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SPAppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		178C85FD19BC3253000A9565 /* SPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SPAppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		178C860019BC3253000A9565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		178C860519BC3253000A9565 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		178C860C19BC3253000A9565 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		178C864319BC4735000A9565 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		49315C501C9D664600377167 /* SPCardSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCardSelectionViewController.h; sourceTree = "<group>"; };
+		49315C511C9D664600377167 /* SPCardSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCardSelectionViewController.m; sourceTree = "<group>"; };
+		49315C531C9D665F00377167 /* SPCardPresentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCardPresentationViewController.h; sourceTree = "<group>"; };
+		49315C541C9D665F00377167 /* SPCardPresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCardPresentationViewController.m; sourceTree = "<group>"; };
+		49315C561C9D704D00377167 /* SPCardsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCardsModel.h; sourceTree = "<group>"; };
+		49315C571C9D704D00377167 /* SPCardsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCardsModel.m; sourceTree = "<group>"; };
+		49315C591C9D712A00377167 /* SPMtgSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMtgSet.h; sourceTree = "<group>"; };
+		49315C5A1C9D712A00377167 /* SPMtgSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMtgSet.m; sourceTree = "<group>"; };
+		49315C621C9D7B2300377167 /* 9ED@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "9ED@2x.png"; sourceTree = "<group>"; };
+		49315C631C9D7B2300377167 /* DIS@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DIS@2x.png"; sourceTree = "<group>"; };
+		49315C641C9D7B2300377167 /* GPT@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GPT@2x.png"; sourceTree = "<group>"; };
+		49315C651C9D7B2300377167 /* RAV@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RAV@2x.png"; sourceTree = "<group>"; };
+		49315C661C9D7B2300377167 /* TSP@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TSP@2x.png"; sourceTree = "<group>"; };
+		49315C6C1C9D87E200377167 /* SPMtgSetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMtgSetTableViewCell.h; sourceTree = "<group>"; };
+		49315C6D1C9D87E200377167 /* SPMtgSetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMtgSetTableViewCell.m; sourceTree = "<group>"; };
+		49315C6F1C9D8B0A00377167 /* mtg_set_configuration.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mtg_set_configuration.csv; sourceTree = "<group>"; };
+		49315C711C9D8FD500377167 /* Undefined@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Undefined@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		178C85E719BC3253000A9565 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				178C864419BC4735000A9565 /* AudioToolbox.framework in Frameworks */,
+				178C85F019BC3253000A9565 /* CoreGraphics.framework in Frameworks */,
+				178C85F219BC3253000A9565 /* UIKit.framework in Frameworks */,
+				178C85EE19BC3253000A9565 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		178C85E119BC3253000A9565 = {
+			isa = PBXGroup;
+			children = (
+				178C85F319BC3253000A9565 /* MtGTranslator */,
+				178C85EC19BC3253000A9565 /* Frameworks */,
+				178C85EB19BC3253000A9565 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		178C85EB19BC3253000A9565 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				178C85EA19BC3253000A9565 /* MtGTranslator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		178C85EC19BC3253000A9565 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				178C864319BC4735000A9565 /* AudioToolbox.framework */,
+				178C85ED19BC3253000A9565 /* Foundation.framework */,
+				178C85EF19BC3253000A9565 /* CoreGraphics.framework */,
+				178C85F119BC3253000A9565 /* UIKit.framework */,
+				178C860C19BC3253000A9565 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		178C85F319BC3253000A9565 /* MtGTranslator */ = {
+			isa = PBXGroup;
+			children = (
+				178C863519BC3A65000A9565 /* Classes */,
+				178C862219BC35F8000A9565 /* Resources */,
+				178C85FC19BC3253000A9565 /* SPAppDelegate.h */,
+				178C85FD19BC3253000A9565 /* SPAppDelegate.m */,
+				178C85FF19BC3253000A9565 /* Main.storyboard */,
+				178C860519BC3253000A9565 /* Images.xcassets */,
+				178C85F419BC3253000A9565 /* Supporting Files */,
+			);
+			path = MtGTranslator;
+			sourceTree = "<group>";
+		};
+		178C85F419BC3253000A9565 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				178C85F519BC3253000A9565 /* MtGTranslator-Info.plist */,
+				178C85F619BC3253000A9565 /* InfoPlist.strings */,
+				178C85F919BC3253000A9565 /* main.m */,
+				178C85FB19BC3253000A9565 /* MtGTranslator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		178C862219BC35F8000A9565 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49315C5E1C9D72B600377167 /* data */,
+				178C862F19BC3848000A9565 /* images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		178C862F19BC3848000A9565 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				49315C611C9D7B2300377167 /* sets */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		178C863519BC3A65000A9565 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				49315C501C9D664600377167 /* SPCardSelectionViewController.h */,
+				49315C511C9D664600377167 /* SPCardSelectionViewController.m */,
+				49315C531C9D665F00377167 /* SPCardPresentationViewController.h */,
+				49315C541C9D665F00377167 /* SPCardPresentationViewController.m */,
+				49315C561C9D704D00377167 /* SPCardsModel.h */,
+				49315C571C9D704D00377167 /* SPCardsModel.m */,
+				49315C591C9D712A00377167 /* SPMtgSet.h */,
+				49315C5A1C9D712A00377167 /* SPMtgSet.m */,
+				49315C6C1C9D87E200377167 /* SPMtgSetTableViewCell.h */,
+				49315C6D1C9D87E200377167 /* SPMtgSetTableViewCell.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		49315C5E1C9D72B600377167 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				49315C6F1C9D8B0A00377167 /* mtg_set_configuration.csv */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		49315C611C9D7B2300377167 /* sets */ = {
+			isa = PBXGroup;
+			children = (
+				49315C711C9D8FD500377167 /* Undefined@2x.png */,
+				49315C621C9D7B2300377167 /* 9ED@2x.png */,
+				49315C631C9D7B2300377167 /* DIS@2x.png */,
+				49315C641C9D7B2300377167 /* GPT@2x.png */,
+				49315C651C9D7B2300377167 /* RAV@2x.png */,
+				49315C661C9D7B2300377167 /* TSP@2x.png */,
+			);
+			path = sets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		178C85E919BC3253000A9565 /* MtGTranslator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 178C861C19BC3253000A9565 /* Build configuration list for PBXNativeTarget "MtGTranslator" */;
+			buildPhases = (
+				178C85E619BC3253000A9565 /* Sources */,
+				178C85E719BC3253000A9565 /* Frameworks */,
+				178C85E819BC3253000A9565 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MtGTranslator;
+			productName = GameTimer;
+			productReference = 178C85EA19BC3253000A9565 /* MtGTranslator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		178C85E219BC3253000A9565 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SP;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = SilyaProduct;
+			};
+			buildConfigurationList = 178C85E519BC3253000A9565 /* Build configuration list for PBXProject "MtGTranslator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 178C85E119BC3253000A9565;
+			productRefGroup = 178C85EB19BC3253000A9565 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				178C85E919BC3253000A9565 /* MtGTranslator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		178C85E819BC3253000A9565 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49315C671C9D7B2300377167 /* 9ED@2x.png in Resources */,
+				49315C691C9D7B2300377167 /* GPT@2x.png in Resources */,
+				49315C681C9D7B2300377167 /* DIS@2x.png in Resources */,
+				178C860619BC3253000A9565 /* Images.xcassets in Resources */,
+				49315C6A1C9D7B2300377167 /* RAV@2x.png in Resources */,
+				49315C721C9D8FD500377167 /* Undefined@2x.png in Resources */,
+				178C85F819BC3253000A9565 /* InfoPlist.strings in Resources */,
+				49315C701C9D8B0A00377167 /* mtg_set_configuration.csv in Resources */,
+				178C860119BC3253000A9565 /* Main.storyboard in Resources */,
+				49315C6B1C9D7B2300377167 /* TSP@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		178C85E619BC3253000A9565 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				178C85FA19BC3253000A9565 /* main.m in Sources */,
+				49315C521C9D664600377167 /* SPCardSelectionViewController.m in Sources */,
+				49315C6E1C9D87E200377167 /* SPMtgSetTableViewCell.m in Sources */,
+				178C85FE19BC3253000A9565 /* SPAppDelegate.m in Sources */,
+				49315C551C9D665F00377167 /* SPCardPresentationViewController.m in Sources */,
+				49315C5B1C9D712A00377167 /* SPMtgSet.m in Sources */,
+				49315C581C9D704D00377167 /* SPCardsModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		178C85F619BC3253000A9565 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				178C85F719BC3253000A9565 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		178C85FF19BC3253000A9565 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				178C860019BC3253000A9565 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		178C861A19BC3253000A9565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		178C861B19BC3253000A9565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		178C861D19BC3253000A9565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MtGTranslator/MtGTranslator-Prefix.pch";
+				INFOPLIST_FILE = "MtGTranslator/MtGTranslator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tripwolf.MtGTranslator;
+				PRODUCT_NAME = MtGTranslator;
+				PROVISIONING_PROFILE = "f41c31b2-bcce-40ca-9676-3f925b5268c1";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		178C861E19BC3253000A9565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MtGTranslator/MtGTranslator-Prefix.pch";
+				INFOPLIST_FILE = "MtGTranslator/MtGTranslator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tripwolf.MtGTranslator;
+				PRODUCT_NAME = MtGTranslator;
+				PROVISIONING_PROFILE = "f41c31b2-bcce-40ca-9676-3f925b5268c1";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		178C85E519BC3253000A9565 /* Build configuration list for PBXProject "MtGTranslator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				178C861A19BC3253000A9565 /* Debug */,
+				178C861B19BC3253000A9565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		178C861C19BC3253000A9565 /* Build configuration list for PBXNativeTarget "MtGTranslator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				178C861D19BC3253000A9565 /* Debug */,
+				178C861E19BC3253000A9565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 178C85E219BC3253000A9565 /* Project object */;
+}
